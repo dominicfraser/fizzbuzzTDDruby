@@ -1,7 +1,7 @@
 def ask_for_input()
   input = gets.strip
   
-  if input.downcase == "quit"
+  if input == "quit"
     return "quit"
   else
     while input != input.to_i.to_s
@@ -14,9 +14,9 @@ end
 
 def fizz_buzz(number)
   
-
-# add and if for when "quit" so 
-  if number % 3 == 0 && number % 5 == 0
+  if number == "quit"
+    return "quit"
+  elsif number % 3 == 0 && number % 5 == 0
     return "FizzBuzz"
   elsif number % 3 == 0
     return "Fizz"
@@ -28,9 +28,11 @@ def fizz_buzz(number)
 end
 
 def turn()
-  puts "Enter any number: "
-  user_input = ask_for_input()
-  puts fizzbuzz(user_input)
+  while fizzbuzz(user_input) != "quit"
+    puts "Enter any number: "
+    user_input = ask_for_input()
+    puts fizzbuzz(user_input)
+  end
 end
 
 

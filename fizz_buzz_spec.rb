@@ -55,15 +55,11 @@ class FizzBuzzTest < MiniTest::Test
   #   assert_equal("quit", actual)
   # end
 
-  def test_play_ends_when_quit_input
-    # ?????
+  def test_fizzbuzz_ends_when_quit_input
+    actual = fizz_buzz("quit")
+    assert_equal("quit", actual)
   end
 
 
 end
 
-
-# def test_fizzbuzz_non_number_return_string_not_allowed
-#   actual = fizz_buzz("g")
-#   assert_equal("Not Allowed", actual)
-# end
