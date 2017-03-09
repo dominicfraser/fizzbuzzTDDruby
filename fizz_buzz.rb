@@ -38,11 +38,7 @@ end
 
 def play() 
 
-  while fizzbuzz(user_input) != "quit"
-    puts "Enter any number: "
-    user_input = ask_for_input()
-    puts fizzbuzz(user_input)
-  end
+  turn()
 
   return "Game Finished"
 
