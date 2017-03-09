@@ -1,6 +1,6 @@
 require_relative("fizz_buzz")
 
-puts "Hi etc"
+puts "Hi, instructions, etc"
 
 play()
 
