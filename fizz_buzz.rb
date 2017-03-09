@@ -31,12 +31,15 @@ def fizz_buzz(number)
 end
 
 def turn()
+    print "Enter any number: "
   while fizz_buzz(ask_for_input()) != "quit"
     print "Enter any number: "
-    user_input = ask_for_input()
-    fizz_buzz(user_input)
+    fizz_buzz(ask_for_input())
+    puts "test"
   end
 end
+####it runs the condition in the while loop each time
+
 
 
 def play() 
