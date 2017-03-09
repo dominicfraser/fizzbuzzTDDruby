@@ -28,10 +28,10 @@ def fizz_buzz(number)
 end
 
 def turn()
-  while fizz_buzz(user_input) != "quit"
+  while fizz_buzz(ask_for_input()) != "quit"
     puts "Enter any number: "
     user_input = ask_for_input()
-    puts fizzbuzz(user_input)
+    puts fizz_buzz(user_input)
   end
 end
 
