@@ -17,11 +17,11 @@ def fizz_buzz(number)
   if number.to_s.downcase == "quit"
     return "quit"
   elsif number % 3 == 0 && number % 5 == 0
-    return "FizzBuzz"
+    puts "FizzBuzz"
   elsif number % 3 == 0
-    return "Fizz"
+    puts "Fizz"
   elsif number % 5 == 0
-    return "Buzz"
+    puts "Buzz"
   end
 
   return number.to_s
@@ -29,7 +29,7 @@ end
 
 def turn()
   while fizz_buzz(ask_for_input()) != "quit"
-    puts "Enter any number: "
+    print "Enter any number: "
     user_input = ask_for_input()
     puts fizz_buzz(user_input)
   end
