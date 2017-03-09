@@ -65,5 +65,17 @@ class FizzBuzzTest < MiniTest::Test
     assert_equal("quit", actual)
   end
 
+  def test_turn_ends_when_quit
+    user_input = "quit"
+    actual = turn()
+    assert_equal("quit", actual)
+  end
+
+
+
+
+
+
+
 end
 
