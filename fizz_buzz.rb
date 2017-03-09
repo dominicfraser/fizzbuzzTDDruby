@@ -24,14 +24,14 @@ def fizz_buzz(number)
     puts "Buzz"
   end
 
-  return number.to_s
+  puts number.to_s
 end
 
 def turn()
   while fizz_buzz(ask_for_input()) != "quit"
     print "Enter any number: "
     user_input = ask_for_input()
-    puts fizz_buzz(user_input)
+    fizz_buzz(user_input)
   end
 end
 

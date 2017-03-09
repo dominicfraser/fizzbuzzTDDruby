@@ -74,9 +74,5 @@ class FizzBuzzTest < MiniTest::Test
 
 
 
-
-
-
-
 end
 
