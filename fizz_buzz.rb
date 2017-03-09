@@ -18,13 +18,16 @@ def fizz_buzz(number)
     return "quit"
   elsif number % 3 == 0 && number % 5 == 0
     puts "FizzBuzz"
+    return "FizzBuzz"
   elsif number % 3 == 0
     puts "Fizz"
+    return "Fizz"
   elsif number % 5 == 0
     puts "Buzz"
+    return "Buzz"
   end
 
-  puts number.to_s
+  return number.to_s
 end
 
 def turn()
