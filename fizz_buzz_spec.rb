@@ -60,6 +60,10 @@ class FizzBuzzTest < MiniTest::Test
     assert_equal("quit", actual)
   end
 
+  def test_fizzbuzz_quit_as_QUit
+    actual = fizz_buzz("QUit")
+    assert_equal("quit", actual)
+  end
 
 end
 
