@@ -26,7 +26,7 @@ def fizz_buzz(number)
     puts "Buzz"
     return "Buzz"
   end
-
+  puts number.to_s
   return number.to_s
 end
 
@@ -34,8 +34,6 @@ def turn()
     print "Enter any number: "
   while fizz_buzz(ask_for_input()) != "quit"
     print "Enter any number: "
-    fizz_buzz(ask_for_input())
-    puts "test"
   end
 end
 ####it runs the condition in the while loop each time
